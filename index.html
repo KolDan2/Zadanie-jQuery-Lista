@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zakupów Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<div class="karta-aplikacji">
+    <header>
+        <h1><i class="fas fa-shopping-basket"></i> Moja Lista</h1>
+        <p>Zarządzaj swoimi zakupami inteligentnie</p>
+        <div class="statystyki">
+            <span id="tekstLicznika">Produkty: <strong id="licznikSuma">0</strong></span>
+            <span id="tekstKupione"> | Kupiono: <strong id="licznikKupione">0</strong></span>
+        </div>
+    </header>
+    
+    <div class="sekcja-wprowadzania">
+        <div class="glowne-pole">
+            <input type="text" id="wejscieProduktu" placeholder="Co kupujemy?">
+            <button id="przyciskDodaj" title="Dodaj produkt"><i class="fas fa-plus"></i></button>
+        </div>
+        
+        <div class="szybkie-akcje">
+            <button id="dodajNaPoczatek" class="btn-obrys">Na początek</button>
+            <button id="dodajNaKoniec" class="btn-obrys">Na koniec</button>
+        </div>
+    </div>
+
+    <div class="filtry">
+        <i class="fas fa-search ikona-szukaj"></i>
+        <input type="text" id="wejscieFiltra" placeholder="Szukaj na liście...">
+    </div>
+
+    <ul id="listaZakupow" class="lista-custom"></ul>
+
+    <div class="przyciski-sterowania">
+        <button id="sortujAlfabetycznie"><i class="fas fa-sort-alpha-down"></i> Sortuj</button>
+        <button id="trybZebra"><i class="fas fa-palette"></i> Zebra</button>
+        <button id="przywrocDemo" class="btn-ostrzezenie"><i class="fas fa-undo"></i> Demo</button>
+        <button id="wyczyscWszystko" class="btn-niebezpieczenstwo"><i class="fas fa-trash-alt"></i> Usuń wszystko</button>
+        <button id="usunOstatni" class="btn-obrys-niebezpieczenstwo"><i class="fas fa-backspace"></i> Usuń ostatni</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
