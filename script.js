@@ -114,7 +114,7 @@ $(document).ready(function() {
 
     $('#przywrocDemo').click(function() {
         $lista.empty();
-        ['Mleko', 'Chleb', 'Masło'].forEach(txt => $lista.append(stworzElement(txt).show()));
+        ['Japuszko', 'Kajzerka', 'Banan'].forEach(txt => $lista.append(stworzElement(txt).show()));
         aktualizujStatystyki();
     });
 
